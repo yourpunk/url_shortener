@@ -35,7 +35,7 @@ def shorten_url(
 
     return URLShortenResponse(
         short_code=db_url.short_code,
-        short_url=f"http://localhost:8000/{db_url.short_code}",
+        short_url=f"{BASE_URL}/{db_url.short_code}",
         original_url=original_url,
     )
 
