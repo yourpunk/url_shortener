@@ -1,3 +1,5 @@
+import os
+
 from fastapi import FastAPI, HTTPException, Depends, status
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, RedirectResponse
@@ -11,6 +13,8 @@ from backend.crud import create_shortened_url, get_url_by_code, get_url_info
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="URL Shortener", description="Simple URL shortening service", version="1.0.0")
+
+BASE_URL = os.getenv("BASE_URL", "http://localhost:8000")
 
 static_dir = Path(__file__).parent.parent / "frontend"
 if static_dir.exists():
