@@ -39,7 +39,7 @@ python -m venv venv
 venv\Scripts\activate        # Windows
 source venv/bin/activate     # macOS/Linux
 
-pip install -r backend/requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Running Locally
