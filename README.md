@@ -29,30 +29,6 @@ Fast and simple **URL** shortening service built with FastAPI. *Live demo*: [url
 - **CI/CD:** GitHub Actions
 - **Deployment:** Render
 
-## Project Structure
-
-```
-url_shortener/
-├── backend/
-│   ├── __init__.py
-│   ├── crud.py       
-│   ├── database.py   
-│   ├── main.py       
-│   ├── models.py     
-│   ├── schemas.py    
-├── frontend/
-│   └── index.html
-├── tests/
-│   ├── __init__.py
-│   ├── test_api.py
-│   └── test_crud.py
-├── .github/workflows/tests.yml
-├── .gitignore
-├── requirements.txt
-└── README.md
-
-```
-
 ## Installation
 
 ```bash
