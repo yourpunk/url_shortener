@@ -76,7 +76,7 @@ curl -X POST https://your-app.onrender.com/api/shorten \
 ## Deployment
 
 Deployed on [Render](https://render.com) using:
-- **Build Command:** `pip install -r backend/requirements.txt`
+- **Build Command:** `pip install -r requirements.txt`
 - **Start Command:** `uvicorn backend.main:app --host 0.0.0.0 --port $PORT`
 - **Environment Variable:** `BASE_URL=https://your-app.onrender.com`
 
